@@ -1,6 +1,7 @@
 # Random Joke Generator
 A fun small desktop application built with **Electron** and **Node.js** that fetches and displays random jokes from the [Official Joke API](https://publicapi.dev/official-joke-api).
-1[image alt](https://github.com/Courtnnieee/Random-Joke-Generator/blob/01e3322fdaf1b673af55428b50bb41b6ec810a76/Add%20a%20heading.png)
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9c5445b3-847e-4c31-ac0f-11d7d581a423" />
 
 ## Features
 - Fetches a new joke at the click of a button.
