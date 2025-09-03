@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Gordita Bold';
+  src: url('./Fonts/Gordita-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Gordita Bold';
+  max-width: 800px;
+  margin: 0 auto;
+  background: #FC3671;
+  background: linear-gradient(4deg, rgb(225, 48, 101) 0%, rgba(171, 34, 75, 1) 17%, rgb(72, 8, 27) 100%);
+  color: #fff;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-row {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-row img:first-child {
+  width: 250px;
+  animation: floatUp 2s ease-in-out infinite alternate;
+}
+
+.image-row img:last-child {
+  width: 210px;
+  animation: floatDown 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(50px);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#joke-start h1 {
+  margin-top: 10px;
+  font-size: 70px;
+}
+
+/*Button */
+button {
+  background-color: #fc3671;
+  color: #fff;
+  font-family: 'Gordita Bold';
+  font-size: 25px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#joke-container p {
+  font-size: 45px;
+  color: #f7a930;
+}
+
+#joke-container h3 {
+  font-size: 35px;
+}

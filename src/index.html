@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Joke Generator</title>
+  <link rel="stylesheet" href="index.css" />
+  <script defer src="render.js"></script>
+</head>
+
+<body>
+  <div id="joke-start" style="display:block;">
+    <div class="image-row">
+      <img src="./images/image1.webp">
+      <img src="./images/image2.png">
+    </div>
+    <h1>Want to hear <br> a joke?</h1>
+    <button id="start-btn">Let's Start!</button>
+  </div>
+
+  <div id="joke-container" style="display:none;">
+    <h3 id="joke-type"></h3>
+    <p id="joke-setup"></p>
+    <p id="joke-punchline"></p>
+
+    <button id="new-joke-btn">Get New Joke</button>
+    <button id="copy-joke-btn">Copy Joke</button>
+    <button id="home-joke-btn">Back to start</button>
+  </div>
+
+
+</body>
+
+</html>
